@@ -1,3 +1,7 @@
 spring:
   application:
     name: challenge
+
+restaurant:
+  url: https://eccdn.com.au/misc/challengedata.json
+
