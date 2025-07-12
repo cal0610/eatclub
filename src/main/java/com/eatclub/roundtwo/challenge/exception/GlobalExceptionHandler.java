@@ -8,6 +8,7 @@ import org.zalando.problem.Status;
 import org.zalando.problem.spring.web.advice.ProblemHandling;
 
 import java.time.format.DateTimeParseException;
+import java.time.zone.ZoneRulesException;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler implements ProblemHandling {
@@ -18,6 +19,16 @@ public class GlobalExceptionHandler implements ProblemHandling {
 			.withTitle("Invalid date time")
 			.withStatus(Status.BAD_REQUEST)
 			.withDetail("Could not parse date time: " + ex.getMessage())
+			.build();
+		return ResponseEntity.status(400).body(problem);
+	}
+
+	@ExceptionHandler(ZoneRulesException.class)
+	public ResponseEntity<Problem> handle(ZoneRulesException ex) {
+		var problem = Problem.builder()
+			.withTitle("Invalid timezone")
+			.withStatus(Status.BAD_REQUEST)
+			.withDetail("Unknown time-zone ID: " + ex.getMessage())
 			.build();
 		return ResponseEntity.status(400).body(problem);
 	}

@@ -24,8 +24,9 @@ Enable annotation processing.
 - Unit tests, sliced testing i.e webmvc
 - Centralized exception handling
 - RFC 7807 specification for problem responses 
+- spring profiles and cascading properties
 
 # Recommended improvements
 
 - Integration test with mock server for restaurant client
-- 
+- Consider making restaurant an interface and use generics for greater flexibility
