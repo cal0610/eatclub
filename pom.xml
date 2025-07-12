@@ -11,7 +11,7 @@
 
 	<groupId>com.eatclub.roundtwo</groupId>
 	<artifactId>challenge</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>challenge</name>
 	<description>Round 2 technical challenge</description>
 
@@ -19,7 +19,7 @@
 		<connection>scm:git:git@github.com:cal0610/eatclub.git</connection>
 		<developerConnection>scm:git:git@github.com:cal0610/eatclub.git</developerConnection>
 		<url>https://github.com/cal0610/eatclub</url>
-		<tag>HEAD</tag>
+		<tag>challenge-0.0.2</tag>
 	</scm>
 
 	<properties>
