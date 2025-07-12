@@ -13,5 +13,5 @@ public record RestaurantDTO(String objectId,
 							String imageLink,
 							String open,
 							String close,
-							List<RestaurantDealDTO> deals) {
+							List<DealDTO> deals) {
 }

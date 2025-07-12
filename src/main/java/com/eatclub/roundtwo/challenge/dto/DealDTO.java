@@ -1,6 +1,6 @@
 package com.eatclub.roundtwo.challenge.dto;
 
-public record RestaurantDealDTO(
+public record DealDTO(
 	String objectId,
 	int discount,
 	boolean dineIn,

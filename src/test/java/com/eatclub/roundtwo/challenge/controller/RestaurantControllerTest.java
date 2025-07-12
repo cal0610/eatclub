@@ -44,7 +44,7 @@ class RestaurantControllerTest {
 	@Test
 	void getRestaurants_shouldReturnRestaurants() throws Exception {
 		// given
-		var restaurantsFile = new ClassPathResource("restaurants/sample.json").getFile();
+		var restaurantsFile = new ClassPathResource("dto/restaurant/restaurants.json").getFile();
 		var restaurantResponse = mapper.readValue(restaurantsFile, RestaurantResponse.class);
 		when(client.getRestaurants()).thenReturn(restaurantResponse);
 
