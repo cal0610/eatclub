@@ -11,7 +11,7 @@
 
 	<groupId>com.eatclub.roundtwo</groupId>
 	<artifactId>challenge</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>challenge</name>
 	<description>Round 2 technical challenge</description>
 
