@@ -1,0 +1,29 @@
+{
+    "family": "eatclub",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": ["FARGATE"],
+    "cpu": "256",
+    "memory": "512",
+    "executionRoleArn": "arn:aws:iam::026519237362:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "eatclub",
+            "image": "026519237362.dkr.ecr.ap-southeast-2.amazonaws.com/eatclub:latest",
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/eatclub",
+                    "awslogs-region": "ap-southeast-2",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }
+        }
+    ]
+}
