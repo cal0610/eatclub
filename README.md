@@ -2,6 +2,9 @@
 
 # Development
 
+## Requirements
+- java 21
+
 ## Profile
 Run the app under `local` profile.
 
