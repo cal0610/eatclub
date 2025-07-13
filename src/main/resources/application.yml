@@ -5,3 +5,8 @@ spring:
 restaurant:
   url: https://eccdn.com.au/misc/challengedata.json
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
