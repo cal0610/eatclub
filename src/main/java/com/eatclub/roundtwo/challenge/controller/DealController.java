@@ -1,6 +1,7 @@
 package com.eatclub.roundtwo.challenge.controller;
 
 import com.eatclub.roundtwo.challenge.domain.MatchingDeal;
+import com.eatclub.roundtwo.challenge.domain.PeakIntervalResult;
 import com.eatclub.roundtwo.challenge.service.DealService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +29,11 @@ public class DealController {
 			: ZoneId.systemDefault(); // I think it makes sense to have a timezone, you may have deals for different countries!
 
 		return dealService.getDeals(localTime);
+	}
+
+	@GetMapping("/peak")
+	public PeakIntervalResult getPeakInterval() {
+		return dealService.getPeakInterval();
 	}
 }
 

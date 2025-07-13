@@ -30,3 +30,4 @@ Enable annotation processing.
 
 - Integration test with mock server for restaurant client
 - Consider making restaurant an interface and use generics for greater flexibility
+- Building a CICD for feature branches that builds, packages snapshots, and test before merging to develop.
