@@ -1,0 +1,2 @@
+GET http://localhost:8080/deals?timeOfDay=10:00
+Accept: application/json
